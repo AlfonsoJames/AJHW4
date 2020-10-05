@@ -1,0 +1,25 @@
+.score {
+    text-align: right;
+}
+main {
+    align-content: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.question {
+    align-content: center;
+    text-align: center;
+}
+.answers {
+    align-content: center;
+    text-align: center;
+}
+.buttons {
+    align-content: center;
+    text-align: center;
+}
+footer {
+    align-content: center;
+    text-align: center;
+}
