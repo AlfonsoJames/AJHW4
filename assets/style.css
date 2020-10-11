@@ -1,16 +1,21 @@
-.score {
+/* .score {
     text-align: left;
 }
 
 .timer {
     text-align: right;
     float: right;
-}
+} */
 
 .nav-link {
-    text-decoration-color: indigo;
+    color: indigo;
 }
 
+.mx-auto {
+
+    border-top: indigo;
+
+}
 main {
     align-content: center;
     text-align: center;
@@ -34,6 +39,6 @@ footer {
     text-align: center;
 }
 
-ul.ba {
+ul {
     list-style-type: none;
 }

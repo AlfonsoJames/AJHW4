@@ -5,31 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZ</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>  
 
 </head>
-    <body>
+    <body onload = "start()">
 <!-- <body class="container-fluid"> -->
-    <h2 class="score">Score: 0/10</h2>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-text">
+            <a class="nav-link" href="./scores.html">View High Scores</a>
+        </span>
+        
+      </nav>
+
+    
     <main>
-    <section class="row">
-        <h1 id="question" class="container-fluid">QUESTION</h1>
+    <section id="questionNum" class="row">
+        
+        <p id="question" class="container-fluid">
+
+        </p>
     </section><br>
 
-    <section class="row">
-        <p id="answers" class="col-3">
-            <ul id="buttons">
-                <li> Answer 1</li>
-                <li> Answer 2</li>
-                <li> Answer 3</li>
+    <section >
+        
+            <ul id="buttons" class="mx-auto btn btn-secondary" style="width: 200px;">
+                <!-- <li><input class="btn btn-primary" type="submit" value="Submit">
+                </li><br>
+                <li>
+                <input class="btn btn-primary" type="submit" value="Submit">
+                </li><br>
+                <li>
+                <input class="btn btn-primary" type="submit" value="Submit">
+                </li><br> -->
             </ul>
-        </p>
+        
     </section><br>
     </main>
 
-    <footer class="container-fluid">
-        <p>Answer Feed Back</p>
+    <footer id="feedback" class="container-fluid">
+        <!-- <p></p> -->
     </footer>
-    <script src="script.js"></script>    
+      
 </body>
 </html>
