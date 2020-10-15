@@ -9,9 +9,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>  
 
+    
 </head>
-    <body onload="start()">
-<!-- <body class="container-fluid"> -->
+<!--  -->
+<body onload="start()">
+<!-- start quiz button on load -->
+
+<!-- Navbar style header w/ High Score link and Timer -->
     <nav class="navbar-light bg-light container-fluid">
         <span class="row">
             <div class="col-sm-9">
@@ -21,30 +25,32 @@
                 <h3 id="countdowntimer"> </h3>
             </div>
         </span>
-        
+<!--  -->
       </nav>
 
     
     <main>
+<!-- Question Section -->
     <section class="row">
         
         <p id="question" class="container-fluid">
 
         </p>
     </section><br>
-
+<!--  -->
     <section >
-        
+<!-- Answer Button Section  -->
             <ul id="buttons" class="mx-auto btn btn-secondary" style="width: 200px;">
                
             </ul>
         
     </section><br>
+<!--  -->
     </main>
-
+<!-- Feed Back Section -->
     <footer id="feedback" class="container-fluid">
-        <!-- <p></p> -->
+        
     </footer>
-      
+<!--  -->
 </body>
 </html>

@@ -8,25 +8,26 @@ function start() {
     $ (ul).append(button)
 
     console.log("Quiz Ready");
-
+// Above creates intial "Start Quiz" html
+// Below starts w/ question 1 starts global timer and sets 1st of conditions to end and prompt for name
     $(button).click(function(){
         q1();
-        console.log("Start Timer");
-    
-        var timeleft = 31;
-        var timer = setInterval(function(){
-        timeleft--;
-        document.getElementById("countdowntimer").textContent = "Timer: " + timeleft;
-        if (timeleft <= 0) {
-            clearInterval(timer);
-            alert("TIME EXPIRED!");
-            prompt("Please Enter Your Name");
-         
-        }},1000);
-        
+        console.log("Start Timer");     
+            var timeleft = 4;
+            var timer = setInterval(function(){
+            timeleft--;
+            document.getElementById("countdowntimer").textContent = "Timer: " + timeleft;
+            if (timeleft <= 0) {
+                alert("TIME EXPIRED!");
+                prompt("Please Enter Your Name");
+                clearInterval(timer);
+            } 
+        },1000);
             
-        })
- 
+    });
+}
+
+// Below is suppossed to generate contents of question 1 and lead to question two...still broken
 function q1() {
     
     console.log("q1");
@@ -50,4 +51,4 @@ function q1() {
     }
     answers.forEach(a1);
 }
-}
+ 
