@@ -17,7 +17,7 @@ function start() {
             var timer = setInterval(function(){
             timeleft--;
             document.getElementById("countdowntimer").textContent = "Timer: " + timeleft;
-            if (timeleft <= 0) {
+            if (timeleft < 0) {
                 alert("TIME EXPIRED!");
                 prompt("Please Enter Your Name");
                 clearInterval(timer);
