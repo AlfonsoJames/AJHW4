@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZ</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>  
 
 </head>
-    <body onload = "start()">
+    <body onload="start()">
 <!-- <body class="container-fluid"> -->
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-text">
-            <a class="nav-link" href="./scores.html">View High Scores</a>
+    <nav class="navbar-light bg-light container-fluid">
+        <span class="row">
+            <div class="col-sm-9">
+                <a class="nav-link" href="./scores.html" >View High Scores</a>
+            </div>
+            <div class="col-sm-3">
+                <h3 id="countdowntimer"> </h3>
+            </div>
         </span>
         
       </nav>
 
     
     <main>
-    <section id="questionNum" class="row">
+    <section class="row">
         
         <p id="question" class="container-fluid">
 
@@ -31,14 +36,7 @@
     <section >
         
             <ul id="buttons" class="mx-auto btn btn-secondary" style="width: 200px;">
-                <!-- <li><input class="btn btn-primary" type="submit" value="Submit">
-                </li><br>
-                <li>
-                <input class="btn btn-primary" type="submit" value="Submit">
-                </li><br>
-                <li>
-                <input class="btn btn-primary" type="submit" value="Submit">
-                </li><br> -->
+               
             </ul>
         
     </section><br>

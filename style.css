@@ -1,16 +1,12 @@
-.score {
-    text-align: left;
-}
-
-.timer {
-    text-align: right;
-    float: right;
-}
-
 .nav-link {
-    text-decoration-color: indigo;
+    color: indigo;
 }
 
+#countdowntimer {
+    position: relative;
+    align-content: right;
+    color: red;
+}
 main {
     align-content: center;
     text-align: center;
