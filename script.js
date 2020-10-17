@@ -15,7 +15,7 @@ function start() {
         q1();
         // $("#question").empty();
         console.log("Start Timer");     
-            var timeleft = 4;
+            var timeleft = 10;
             var timer = setInterval(function(){
             timeleft--;
             document.getElementById("countdowntimer").textContent = "Timer: " + timeleft;
@@ -30,7 +30,7 @@ function start() {
 }
 
 // Generate contents of question 1 
-    
+function q1() {  
     console.log("q1");
 
     var answers =[
@@ -47,6 +47,7 @@ function start() {
         $ (ul).append(button);
         var correct = $("#correct");
     });
+}
     // now I cant figure out how to separte the correct answer from the wrong answer:()
     
 
